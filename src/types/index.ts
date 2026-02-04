@@ -1,6 +1,9 @@
-import { clsx, type ClassValue } from "clsx"
-import { twMerge } from "tailwind-merge"
-
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+export interface Note {
+  id: string;
+  title: string;          
+  content: string;        
+  createdAt: string;     
+  updatedAt: string;
 }
+
+export type NoteId = string;

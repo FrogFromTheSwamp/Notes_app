@@ -1,13 +1,24 @@
 @import "tailwindcss";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import 'react-quill/dist/quill.snow.css';
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: #f8fafc;
   color: #0f172a;
+}
+
+.ql-editor img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin: 0.5em auto;          
+}
+
+.ql-editor {
+  max-width: 100%;
+  overflow-x: hidden;          
+}
+
+.ql-container {
+  height: auto !important;    
 }
